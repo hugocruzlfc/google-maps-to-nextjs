@@ -4,12 +4,6 @@ import GoogleMaps from "../components/GoogleMaps";
 import { useState } from "react";
 
 export default function Home() {
-  const [form, setForm] = useState({
-    address: "",
-    latitude: 41.32313027546416,
-    longitude: 2.086369011186136,
-    radius: 500,
-  });
   const [latitude, setLatitude] = useState<number>(41.32313027546416);
   const [longitude, setLongitude] = useState<number>(2.086369011186136);
   const [address, setAddress] = useState<string>("Barcelona, Spain");
@@ -30,7 +24,6 @@ export default function Home() {
             }}
             address={address}
             setAddress={setAddress}
-            radius={form.radius}
             setLatitude={setLatitude}
             setLongitude={setLongitude}
             latitude={latitude}

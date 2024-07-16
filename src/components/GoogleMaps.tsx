@@ -14,7 +14,6 @@ import React, {
 } from "react";
 
 interface GoogleMapsProps {
-  radius: number;
   setLatitude: (latitude: number) => void;
   setLongitude: (longitude: number) => void;
   style: React.CSSProperties;
@@ -27,7 +26,6 @@ interface GoogleMapsProps {
 const libraries = ["places"];
 
 const GoogleMaps: React.FC<GoogleMapsProps> = ({
-  radius,
   setLatitude,
   setLongitude,
   style,
